@@ -12,7 +12,7 @@ Packer scripts for creating a matric VM
 
 Other notes
 1. Run `git lfs install` in each repo that needs it, and then `git lfs fetch` and ``git lfs pull` to actually get the files
-2. Run `sudo chown 777 -R` on any directory you want to access but can't. The sudo password seems to be the same as for RStudio.
+2. Run `sudo chown 777 -R` on any directory you want to access but can't. The sudo password is the same as for RStudio.
 3. Gzip is not automatically available with the `arrow` package. You will need to do this
 ```r
 Sys.setenv(ARROW_S3="ON")
@@ -20,5 +20,5 @@ Sys.setenv(NOT_CRAN="true")
 install.packages("arrow", repos = "https://arrow-r-nightly.s3.amazonaws.com")
 ```
 4. Use GitHub [PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) for accessing repos.
-
+5. ssh using `ubuntu` but then switch over to `rstudio` using `sudo login rstudio`. The sudo password is the same as for RStudio.
 
